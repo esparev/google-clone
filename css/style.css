@@ -106,9 +106,6 @@ body {
   font-size: 1.6rem;
   margin: 0 1rem;
 }
-.main-container__searchbar--input:focus .main-container__searchbar {
-  box-shadow: 0px 0px 4px 0px rgba(112, 117, 137, 0.4);
-}
 .main-container__searchbar--input:focus {
   outline: none;
 }
@@ -125,7 +122,7 @@ body {
   background-color: var(--google-grey);
   padding: 1rem;
   border-radius: 5px;
-  margin: 0 2rem;
+  margin: 0 1rem;
   border: none;
 }
 .main-container__buttons--clickable:hover {
