@@ -124,6 +124,7 @@ body {
   border-radius: 5px;
   margin: 0 1rem;
   border: none;
+  user-select: none;
 }
 .main-container__buttons--clickable:hover {
   color: rgb(80, 83, 95);
