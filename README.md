@@ -4,9 +4,9 @@ A static Google clone page of the main search page adapted only for desktop for 
 ### Working functions:
 - Hover effects on links and buttons
 - Link lead to actual Google pages
+- Responsive
 
 ### In development:
-- Responsive
 - Google Images page clone
 - Clone the rest of links
 - Display Google Apps list when clicked
