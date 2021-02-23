@@ -6,14 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="robots" content="index,follow"/>
-		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
 		<link rel="icon" href="./assets/google-icon.png">
 		<title>Google</title>
 	</head>
 	<body>
-		<!-- Header Start -->
-		<header class="main-header">
-			<nav>
+		<header>
+			<nav class="main-header">
 				<ul class="main-header__primary-nav">
 					<li class="main-header__primary-nav--link"><a href="https://mail.google.com/mail/?authuser=0&ogbl">Gmail</a></li>
 					<li class="main-header__primary-nav--link"><a href="https://www.google.com.mx/imghp?hl=es-419&authuser=0&ogbl">Imágenes</a></li>
@@ -22,18 +22,15 @@
 				</ul>
 			</nav>
 		</header>
-		<!-- Header End -->
-
-		<!-- Main Start -->
 		<main class="main-container">
-			<figure class="main-container__image">
-				<img src="./assets/google-logo-large.png" alt="Google Logo">
-			</figure>
+			<section class="main-container__image">
+				<span></span>
+			</section>
 			<section class="main-container__searchbar">
-				<figure>
-					<img src="./assets/search-icon.svg" alt="Search Icon" draggable="false">
-				</figure>
-				<input class="main-container__searchbar--input" type="text">
+				<div>
+					<span class="main-container__searchbar--icon"></span>
+					<input class="main-container__searchbar--input" type="text">
+				</div>
 			</section>
 			<section class="main-container__buttons">
 				<a class="main-container__buttons--clickable" href="" draggable="false">Buscar con Google</a>
@@ -43,9 +40,6 @@
 				<p class="main-container__by-google--link">Ofrecido por Google en: <a href="">English</a></p>
 			</section>
 		</main>
-		<!-- Main End -->
-
-		<!-- Footer Start -->
 		<footer class="main-footer">
 			<p class="main-footer--location">México</p>
 			<hr>
@@ -67,6 +61,5 @@
 				</nav>
 			</section>
 		</footer>
-		<!-- Footer End -->
 	</body>
 </html>

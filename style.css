@@ -24,18 +24,17 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* -------------------- Header Styles -------------------- */
 .main-header {
-  flex-grow: 1;
-  font-size: 1.3rem;
-  padding: .9rem;
   width: 100%;
   height: 60px;
+  padding: 9px;
+  flex-grow: 1;
+  font-size: 1.3rem;
 }
 .main-header__primary-nav {
+  display: flex;
   padding-left: 32px;
   padding-right: 4px;
-  display: flex;
   float: right;
   align-items: center;
 }
@@ -61,106 +60,110 @@ body {
   width: 32px;
 }
 .main-header__primary-nav--icon:hover {
-  background-color: var(--google-grey);
   border-radius: 1000px;
+  background-color: var(--google-grey);
 }
-/* -------------------- Main Styles -------------------- */
 .main-container {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   height: 100%;
   width: 100%;
 }
-/* Image container section starts */
 .main-container__image {
   display: flex;
-  justify-content: center;
   width: 100%;
-  padding-top: 5rem;
-}
-.main-container__image img {
-  width: 300px;
-}
-/* Image container section ends */
-
-/* Searchbar section starts */
-.main-container__searchbar {
-  border: 1px rgba(235, 235, 235, 1) solid;
+  min-width: 280px;
+  max-width: 450px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
   justify-content: center;
-  border-radius: 100px;
-  display: flex;
-  margin: 3rem auto;
+}
+.main-container__image span {
+  width: 300px;
+  height: 120px;
+  background-image: url('./assets/google-logo-medium.png');
+  background-size: cover;
+}
+
+.main-container__searchbar {
+  width: 90%;
+  min-width: 288px;
   max-width: 560px;
+  margin: 3rem auto;
+  border: 1px rgba(235, 235, 235, 1) solid;
+  border-radius: 100px;
+}
+.main-container__searchbar div {
+  display: flex;
+  width: 100%;
+  height: 100%;
   align-items: center;
 }
-.main-container__searchbar img {
+.main-container__searchbar--icon {
   width: 20px;
+  height: 20px;
+  margin: 0 15px;
+  background-image: url('./assets/search-icon.svg');
+  background-position: center;
+  background-size: cover;
 }
 .main-container__searchbar:hover {
-  box-shadow: 0px 0px 4px 0px rgba(112, 117, 137, 0.4);
   border: none;
+  box-shadow: 0px 0px 4px 0px rgba(112, 117, 137, 0.4);
 }
 .main-container__searchbar--input {
-  width: 85%;
-  border: none;
+  width: 80%;
   height: 40px;
+  margin-right: 15px;
   font-size: 1.6rem;
-  margin: 0 1rem;
+  border: none;
 }
 .main-container__searchbar--input:focus {
   outline: none;
 }
-/* Searchbar container ends */
 
-/* Buttons section starts */
 .main-container__buttons {
   display: flex;
+  font-size: 1.3rem;
   justify-content: center;
 }
 .main-container__buttons--clickable {
-  color: rgb(98, 101, 114);
-  font-size: 1.4rem;
-  background-color: var(--google-grey);
-  padding: 1rem;
+  margin: 0 10px;
+  padding: 10px;
   border-radius: 5px;
-  margin: 0 1rem;
   border: none;
+  color: rgb(98, 101, 114);
+  background-color: var(--google-grey);
   user-select: none;
 }
 .main-container__buttons--clickable:hover {
-  color: rgb(80, 83, 95);
   border: 1px solid rgba(235, 235, 235, 0.9);
+  color: rgb(80, 83, 95);
 }
-/* Buttons section ends */
 
-/* Offered by Google section starts */
 .main-container__by-google--link {
   display: flex;
-  justify-content: center;
   padding: 2rem;
   font-size: 1.3rem;
+  justify-content: center;
 }
 .main-container__by-google--link a {
   display: flex;
+  padding: 0 5px;
   justify-content: center;
   color: blue;
-  padding: 0 .5rem;
 }
 .main-container__by-google--link a:hover {
   text-decoration: underline;
 }
-/* Offered by Google section ends */
 
-/* -------------------- Footer Styles -------------------- */
 .main-footer {
-  background-color: var(--google-grey);
-  font-size: 1.5rem;
   width: 100%;
-  /* position: absolute;
-  bottom: 0; */
+  font-size: 1.5rem;
   color: var(--google-font);
+  background-color: var(--google-grey);
 }
 .main-footer--location {
-  padding: 1.5rem 3rem;
+  padding: 15px 30px;
 }
 hr {
   border-top: 0.5px rgba(112, 117, 137, 0.4) solid;
@@ -168,28 +171,29 @@ hr {
 }
 .main-footer-nav-containers {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .main-footer a {
   color: var(--google-font);
 }
 .main-footer a:hover {
-  color: var(--google-font);
   text-decoration: underline;
+  color: var(--google-font);
 }
 .main-footer__about-nav {
-  padding: 0 2rem;
+  display: none;
+  padding: 0 20px;
 }
 .main-footer__about-nav--link {
-  font-size: 1.4rem;
   display: inline-block;
-  padding: 1.5rem 1rem;
+  padding: 15px 10px;
+  font-size: 1.4rem;
 }
 .main-footer__privacy-nav {
   padding: 0 2rem;
 }
 .main-footer__privacy-nav--link {
-  font-size: 1.4rem;
   display: inline-block;
-  padding: 1.5rem 1rem;
+  padding: 15px 8px;
+  font-size: 1.4rem;
 }
