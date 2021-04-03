@@ -1,4 +1,4 @@
-# Google-Clone
+# Google Clone
 A static Google clone page of the main search page adapted only for desktop for now.
 - 
 ### Working functions:
